@@ -1,0 +1,63 @@
+/*CSS RESET*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*MOBIL*/
+@media (min-width: 700px) {
+  /*HEADER*/
+  .navheader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navheader h1 {
+    margin-right: left;
+  }
+
+  /*MAIN*/
+  .kategoriliste {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+  }
+
+  .kategoriliste a {
+    text-decoration: none;
+    padding: 2em;
+    color: white;
+    background-color: grey;
+  }
+
+  .produktliste .lilleprodukt_tilbud .tilbud {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tilbud_roed {
+    background-color: red;
+  }
+
+  .produktliste .lilleprodukt_udsolgt::before {
+    content: "Sold Out";
+    position: absolute;
+    background: darkslategray;
+    color: white;
+    padding: 1rem;
+
+    /*FOOTER*/
+  }
+}
