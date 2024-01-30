@@ -18,14 +18,61 @@ img {
 /*MOBIL*/
 @media (min-width: 700px) {
   /*HEADER*/
-  .navheader {
+  .mainNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .navheader h1 {
+  .mainNav h1 {
     margin-right: left;
+  }
+
+  .mainNav h1 span {
+    display: inline-block;
+    transform: scaleX(-1) translateX(-0.2rem);
+    color: seagreen;
+  }
+
+  .headertekst a h1 {
+    position: absolute;
+    transform: translate(40%, 100%);
+    color: black;
+    background-color: white;
+    font-size: 100px;
+    border-radius: 0%;
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .mainNav .headerbillede img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    font-size: 35px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 390px;
+    margin-left: -40px;
+    text-transform: uppercase;
+  }
+
+  ul .link {
+    color: white;
   }
 
   /*MAIN*/
@@ -39,7 +86,9 @@ img {
     text-decoration: none;
     padding: 2em;
     color: white;
-    background-color: grey;
+    background-color: darkslategray;
+    text-align: center;
+    border-radius: 50px;
   }
 
   .produktliste .lilleprodukt_tilbud .tilbud {
@@ -57,7 +106,20 @@ img {
     background: darkslategray;
     color: white;
     padding: 1rem;
-
-    /*FOOTER*/
   }
+
+  .produktliste .lilleprodukt_udsolgt_tilbud::before {
+    content: "Sold Out";
+    position: absolute;
+    background: darkslategray;
+    color: white;
+    padding: 1rem;
+  }
+
+  .produktliste .lilleprodukt_udsolgt_tilbud .tilbud {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /*FOOTER*/
 }
