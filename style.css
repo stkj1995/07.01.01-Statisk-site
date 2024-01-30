@@ -31,19 +31,19 @@ img {
   .mainNav h1 span {
     display: inline-block;
     transform: scaleX(-1) translateX(-0.2rem);
-    color: seagreen;
+    color: #5e503f;
   }
 
   .headertekst a h1 {
     position: absolute;
-    transform: translate(40%, 100%);
-    color: black;
-    background-color: white;
+    transform: translate(50%, 100%);
+    color: white;
+    /* background-color: white; */
     font-size: 100px;
     border-radius: 0%;
     padding: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
 
   .mainNav .headerbillede img {
@@ -60,7 +60,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
+    transform: translate(-45%, -65%);
     font-size: 35px;
     list-style-type: none;
     display: flex;
