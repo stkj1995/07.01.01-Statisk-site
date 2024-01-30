@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: calc(18px + ((100vw - 600px) / 250));
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+}
 
 body {
   margin: 0;
@@ -16,9 +20,21 @@ img {
 
 /*MOBIL*/
 @media (min-width: 700px) {
-  @font-face {
-    font-family: "MinFantastiskeFont";
-    src: url("fonts/") format("woff2");
+  h1 {
+    font-size: 3.052rem;
+    letter-spacing: -0.1rem;
+    line-height: 1;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1rem;
+    margin-top: 1em;
+    font-weight: bold;
   }
 
   body {
@@ -28,5 +44,14 @@ img {
     line-height: 1.563;
     color: black;
     background-color: white;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: black;
+    border-radius: 5px;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
   }
 }

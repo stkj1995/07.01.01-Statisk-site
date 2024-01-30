@@ -36,13 +36,12 @@ img {
 
   .headertekst a h1 {
     position: absolute;
-    transform: translate(50%, 100%);
-    color: white;
+    transform: translate(50%, 120%);
+    color: #a9927d;
     /* background-color: white; */
-    font-size: 100px;
+    font-size: 120px;
     border-radius: 0%;
     padding: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: lowercase;
   }
 
@@ -60,7 +59,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-45%, -65%);
+    transform: translate(-42%, -60%);
     font-size: 35px;
     list-style-type: none;
     display: flex;
@@ -86,9 +85,10 @@ img {
     text-decoration: none;
     padding: 2em;
     color: white;
-    background-color: darkslategray;
+    background-color: #5e503f;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 20px;
+    font-size: 25px;
   }
 
   .produktliste .lilleprodukt_tilbud .tilbud {
@@ -103,7 +103,7 @@ img {
   .produktliste .lilleprodukt_udsolgt::before {
     content: "Sold Out";
     position: absolute;
-    background: darkslategray;
+    background-color: #5e503f;
     color: white;
     padding: 1rem;
   }
@@ -111,7 +111,7 @@ img {
   .produktliste .lilleprodukt_udsolgt_tilbud::before {
     content: "Sold Out";
     position: absolute;
-    background: darkslategray;
+    background-color: #5e503f;
     color: white;
     padding: 1rem;
   }
