@@ -49,7 +49,7 @@ img {
   a {
     color: inherit;
     text-decoration: underline;
-    text-decoration-color: black;
+    text-decoration-color: #5e503f;
     border-radius: 5px;
     text-underline-offset: 2px;
     text-decoration-thickness: 2px;
