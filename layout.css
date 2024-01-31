@@ -55,6 +55,7 @@ img {
     text-underline-offset: 2px;
     text-decoration-thickness: 2px;
     margin-left: 5px;
+    padding-top: 15px;
   }
 
   a:hover {
