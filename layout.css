@@ -54,10 +54,11 @@ img {
     border-radius: 5px;
     text-underline-offset: 2px;
     text-decoration-thickness: 2px;
+    margin-left: 5px;
   }
 
   a:hover {
-    background-color: white;
+    background-color: transparent;
   }
 
   ol,
@@ -97,6 +98,7 @@ img {
     font-weight: bold;
     display: flex;
     margin-top: 20px;
+    flex-direction: row;
   }
 
   label select {

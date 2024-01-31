@@ -22,6 +22,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .mainNav h1 {
@@ -75,6 +76,8 @@ img {
     padding-top: 390px;
     margin-left: -40px;
     text-transform: uppercase;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   ul .link {
@@ -84,7 +87,7 @@ img {
   /*MAIN*/
   .produktliste main {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+    grid-template-columns: repeat(auto-fill, minmax(150px, 270px));
     gap: 2rem;
   }
 
@@ -96,27 +99,44 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
+    margin-top: 80px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
 
   .kategoriliste a {
     text-decoration: none;
-    padding: 2em;
+    padding: 40px;
     color: white;
     background-color: #5e503f;
     text-align: center;
     border-radius: 20px;
     font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  .produktliste article .lilleprodukt_udsolgt > * {
+    margin: 0;
+    font-size: 0.9rem;
   }
 
   .produktliste .lilleprodukt_tilbud .tilbud {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .produktliste article h3 {
+    font-size: 20px;
+    flex-grow: 3;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .tilbud_roed {
     background-color: #9e2a2b;
-    border-radius: 10px;
-    padding: 0px;
+    border-radius: 20px;
+    padding: 15px;
   }
 
   .produktliste .lilleprodukt_udsolgt img {
@@ -146,18 +166,24 @@ img {
   .produktliste .lilleprodukt_udsolgt_tilbud .tilbud {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .skjult {
     color: #bcb8b1;
+    padding-bottom: 30px;
   }
 
   .pris {
     color: #353535;
+    padding-top: 10px;
+    font-size: 20px;
   }
 
   .tilbud p {
     color: green;
+    font-size: 26px;
+    text-align: left;
   }
 
   .tilbud_roed p {
@@ -180,6 +206,7 @@ img {
     display: flex;
     font-size: 18px;
     list-style-type: none;
+    flex-direction: row;
   }
 
   .broedkrummer li::after {
@@ -214,6 +241,12 @@ img {
     margin-top: 1rem;
     width: 100%;
   }
+
+  /* .lilleprodukt_udsolgt a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  } */
 
   /*FOOTER*/
 }
