@@ -92,7 +92,7 @@ img {
   .produktliste main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 250px));
-    gap: 15px;
+    gap: 29px;
     background-color: white;
     padding: 10px;
     padding-left: 50px;
@@ -203,7 +203,7 @@ img {
 
   .tilbud p {
     color: green;
-    font-size: 26px;
+    font-size: 22px;
     text-align: left;
   }
 
@@ -223,6 +223,13 @@ img {
     margin-bottom: -100px;
     margin-left: 100px;
     border-radius: 50px;
+  }
+
+  main article {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .broedkrummer {
