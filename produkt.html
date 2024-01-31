@@ -10,19 +10,64 @@
     <link rel="stylesheet" href="layout.css">
 </head>
 
-<body>
-    <header>
-        <nav class="navheader">
-            <ul>
-                <li><a class="link" href="index.html">Forside</a></li>
-                <li><a class="link" href="kategori.html">Kategori</a></li>
-                <li><a class="link" href="produktliste.html">Produktliste</a></li>
-                <li><a class="link" href="produkt.html">Produkt</a></li>
-            </ul>
+<body class="produkt">
+    <header class="mainNav">
+        <a href="index.html">
+            <h1>Fashion
+                <span>4</span>
+                Us
+            </h1>
+        </a>
+        <nav>
+            <a href="kategori.html">Kategorier</a>
+            <a href="#">Mærker</a>
+            <a href="#">Årstider</a>
         </nav>
     </header>
 
-    <main></main>
+    <main>
+        <ol class="broedkrummer">
+            <li><a href="index.html">Forside</a></li>
+            <li><a href="kategori.html">Mærker</a></li>
+            <li><a href="produktliste.html">Produkter</a></li>
+            <li>Sahara Team India Fanwear Round Neck Jersey</li>
+        </ol>
+
+        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1163.webp"
+            alt="Sahara Team India Fanwear Round Neck Jersey">
+
+        <section class="tilvalg">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+            <p>Herre | Tshirt | Nike</p>
+            <form>
+                <label>
+                    Vælg tøjstørrelse
+                    <select name="stoerrelse">
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </label>
+                <button>Føj til kurven</button>
+            </form>
+        </section>
+
+        <section class="info">
+            <h2>Produktinformation
+            </h2>
+            <dl>
+                <dt>Varens modelnavn</dt>
+                <dd>Sahara Team India Fanwear Round Neck Jersey</dd>
+                <dt>Farve</dt>
+                <dd>Blå</dd>
+                <dt>Inventarnummer</dt>
+                <dd>1163</dd>
+            </dl>
+            <h1>Nike</h1>
+            <p>Nike, creating experiences for today’s athlete</p>
+        </section>
+    </main>
 
     <footer></footer>
     <script src="javascript/script.js"></script>

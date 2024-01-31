@@ -164,5 +164,9 @@ img {
     color: white;
   }
 
+  .produkt main {
+    grid-template-columns: 1fr 310px;
+}
+
   /*FOOTER*/
 }
