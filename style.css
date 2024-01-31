@@ -115,12 +115,8 @@ img {
 
   .tilbud_roed {
     background-color: #9e2a2b;
-    border-radius: 20px;
-    padding: 10px;
-  }
-
-  .tilbud_roed p {
-    color: white;
+    border-radius: 10px;
+    padding: 0px;
   }
 
   .produktliste .lilleprodukt_udsolgt img {
@@ -128,7 +124,7 @@ img {
   }
 
   .produktliste .lilleprodukt_udsolgt::before {
-    content: "Sold Out";
+    content: "Udsolgt";
     position: absolute;
     background-color: #5e503f;
     color: white;
@@ -140,7 +136,7 @@ img {
   }
 
   .produktliste .lilleprodukt_udsolgt_tilbud::before {
-    content: "Sold Out";
+    content: "Udsolgt";
     position: absolute;
     background-color: #5e503f;
     color: white;
@@ -154,6 +150,18 @@ img {
 
   .skjult {
     color: #bcb8b1;
+  }
+
+  .pris {
+    color: #353535;
+  }
+
+  .tilbud p {
+    color: green;
+  } 
+  
+  .tilbud_roed p {
+    color: white;
   }
 
   /*FOOTER*/
