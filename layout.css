@@ -54,4 +54,80 @@ img {
     text-underline-offset: 2px;
     text-decoration-thickness: 2px;
   }
+
+  ol,
+  ul {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 1.563rem;
+  }
+
+  ol {
+    list-style: decimal outside;
+  }
+
+  h3 {
+    font-size: 1.953rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.2;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 1rem;
+    margin-top: 1em;
+    font-weight: bold;
+  }
+
+  p {
+    margin-bottom: 1.563rem;
+  }
+
+  label {
+    font-weight: bold;
+    display: flex;
+  }
+
+  label select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #5e503f;
+    height: 2.5rem;
+    background-color: white;
+    /* background-image: black;
+    background-repeat: no-repeat; */
+    background-size: 1rem;
+    background-position: center right 0.5rem;
+  }
+
+  button {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid white;
+    color: #5e503f;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 2.441rem;
+    letter-spacing: -0.12rem;
+    line-height: 1.2;
+  }
+
+  .info {
+    order: 0;
+    padding: 5px;
+  }
+
+  dt {
+    font-weight: 700;
+  }
 }

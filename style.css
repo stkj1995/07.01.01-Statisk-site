@@ -158,15 +158,59 @@ img {
 
   .tilbud p {
     color: green;
-  } 
-  
+  }
+
   .tilbud_roed p {
     color: white;
   }
 
   .produkt main {
+    display: grid;
     grid-template-columns: 1fr 310px;
-}
+  }
+
+  .produkt main img {
+    grid-column: 1/-1;
+  }
+
+  .broedkrummer {
+    display: flex;
+    font-size: 0.8rem;
+    list-style-type: none;
+  }
+
+  .broedkrummer li::after {
+    content: " > ";
+    font-size: 0.6rem;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 10px;
+    transition: all 0.3s;
+  }
+
+  .tilvalg {
+    order: 2;
+    transform: translate(-50px, -100px);
+    border-radius: 10px;
+    background: #bcb8b1;
+    color: #5e503f;
+    padding: 1rem;
+  }
+
+  .tilvalg form label {
+    gap: 1rem;
+  }
+
+  .stoerrelse {
+    min-width: 100px;
+  }
+
+  .tilvalg button {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+  }
 
   /*FOOTER*/
 }
