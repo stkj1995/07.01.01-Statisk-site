@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: calc(18px + ((100vw - 600px) / 250));
   font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
@@ -55,6 +56,10 @@ img {
     text-decoration-thickness: 2px;
   }
 
+  a:hover {
+    background-color: white;
+  }
+
   ol,
   ul {
     padding-left: 0;
@@ -84,12 +89,14 @@ img {
   }
 
   p {
-    margin-bottom: 1.563rem;
+    margin: 5px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
 
   label {
     font-weight: bold;
     display: flex;
+    margin-top: 20px;
   }
 
   label select {
@@ -100,10 +107,23 @@ img {
     color: #5e503f;
     height: 2.5rem;
     background-color: white;
-    /* background-image: black;
-    background-repeat: no-repeat; */
     background-size: 1rem;
     background-position: center right 0.5rem;
+  }
+
+  input[type="submit"],
+  input[type="reset"],
+  input[type="button"],
+  button {
+    cursor: pointer;
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    display: inline-block;
+    line-height: initial;
+    transition: background-color 200ms ease-in-out, border 200ms ease-in-out, transform 200ms ease-in-out;
   }
 
   button {
@@ -124,10 +144,16 @@ img {
 
   .info {
     order: 0;
-    padding: 5px;
+    padding: 40px;
+    background-color: #5e503f;
+    color: white;
+    border-radius: 10px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   }
 
   dt {
     font-weight: 700;
+    padding: 10px;
+    text-decoration: underline;
   }
 }

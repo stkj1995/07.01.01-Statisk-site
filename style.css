@@ -171,11 +171,14 @@ img {
 
   .produkt main img {
     grid-column: 1/-1;
+    width: 80%;
+    margin-bottom: -100px;
+    margin-top: 0px;
   }
 
   .broedkrummer {
     display: flex;
-    font-size: 0.8rem;
+    font-size: 18px;
     list-style-type: none;
   }
 
@@ -191,11 +194,11 @@ img {
 
   .tilvalg {
     order: 2;
-    transform: translate(-50px, -100px);
+    transform: translate(-60px, 0px);
     border-radius: 10px;
     background: #bcb8b1;
     color: #5e503f;
-    padding: 1rem;
+    padding: 20px;
   }
 
   .tilvalg form label {
