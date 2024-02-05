@@ -9,9 +9,9 @@ fetch("https://kea-alt-del.dk/t7/api/products/" + id)
 function showProduct(product) {
   console.log(product);
   document.querySelector(".tilvalg h3").textContent = product.productdisplayname;
-  document.querySelector(".tilvalg koen").textContent = product.gender;
-  document.querySelector(".tilvalg overdel").textContent = product.subcategory;
-  document.querySelector(".tilvalg brand").textContent = product.brandname;
+  document.querySelector(".tilvalg .koen").textContent = product.gender;
+  document.querySelector(".tilvalg .overdel").textContent = product.subcategory;
+  document.querySelector(".tilvalg .brand").textContent = product.brandname;
   document.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 }
 
