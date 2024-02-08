@@ -1,4 +1,7 @@
-fetch("https://kea-alt-del.dk/t7/api/products")
+const urlParams = new URLSearchParams(window.location.search);
+const kat = urlParams.get("category");
+
+fetch("https://kea-alt-del.dk/t7/api/products?category=" + kat)
   .then((res) => res.json())
   .then(showProducts);
 
@@ -24,5 +27,3 @@ function showProduct(product) {
   //appende
   document.querySelector("main").appendChild(copy);
 }
-
-
