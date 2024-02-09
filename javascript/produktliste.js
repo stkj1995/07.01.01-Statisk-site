@@ -22,7 +22,8 @@ function showProduct(product) {
     //produktet er udsolgt
     copy.querySelector("article").classList.add("udsolgt");
   }
-  copy.querySelector(".se-mere").setAttribute("href", `produkt.html?id=${product.id}`);
+  copy.querySelector(".se-mere").href = `produkt.html?id=${product.id}`;
+
   copy.querySelector(".lilleprodukt img").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   //appende
   document.querySelector("main").appendChild(copy);
